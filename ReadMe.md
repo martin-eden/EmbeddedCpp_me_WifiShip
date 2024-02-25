@@ -2,7 +2,12 @@
 
 ## Overview
 
-Eplora. Get/set MAC, scan, connect to router, get IP.
+Esplora WiFi API wrapper.
+
+  - [x] Get/set MAC
+  - [x] Scan
+  - [x] Connect to router
+  - [x] Get IP
 
 Do it with style! I love space games (Elite, KSP), so imagine
 your WiFi module is _ship_ (base type is _craft_). It has _name_ (SSID)
