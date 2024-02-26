@@ -1,9 +1,8 @@
 // WifiShip docker implementation
 
 /*
-  Status: done
-  Version: 1
-  Last mod.: 2024-02-20
+  Version: 2
+  Last mod.: 2024-02-26
 */
 
 #include "Docker/Interface.h"
@@ -11,6 +10,9 @@
 #include <ESP8266WiFi.h> // ESP8266 official SDK
 
 using namespace me_WifiShip_Docker;
+
+// Default docking timeout (seconds):
+const TUint_1 DefaultDockingTimeout_S = 20;
 
 // --( Init )--
 TBool TDocker::Init()
@@ -179,4 +181,5 @@ TStatus TDocker::MapInnerStatus(TSint_1 aInnerStatus)
   2024-01-03
   2024-01-13
   2024-01-14
+  2024-02-26
 */

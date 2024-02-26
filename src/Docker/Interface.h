@@ -1,8 +1,7 @@
 // WifiShip docker module (connect/disconnect to station).
 
 /*
-  Status: stable
-  Version: 3
+  Version: 4
   Last mod.: 2024-02-26
 */
 
@@ -38,11 +37,14 @@
       --( Docking )--
       DockTo: DockingStatus
         (StationName, StationPassword)
-
       Undock
         // post_assert(DockingStatus == Not docked)
 
-      --( Channel )--
+      --( Docking timeout )--
+      GetDockingTimeout_S: TUint_1
+      SetDockingTimeout_S(TUint_1)
+
+      --( Docked channel )--
       GetShipAddress: bool, Address
         // local IP: 192.168.0.208
 
@@ -75,9 +77,6 @@ namespace me_WifiShip_Docker
     Nah_TimeoutReached,
     Nah_Other
   };
-
-  // Timeout
-  const TUint_1 DefaultDockingTimeout_S = 30;
 
   class TDocker
   {
