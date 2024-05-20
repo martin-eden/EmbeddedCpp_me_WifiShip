@@ -3,7 +3,7 @@
 /*
   Status: good base
   Version: 5
-  Last mod.: 2024-02-26
+  Last mod.: 2024-05-20
 */
 
 /*
@@ -16,7 +16,7 @@
 #include <Scanner/Ui/Interface.h>
 #include <Docker/Ui/Interface.h>
 
-#include <me_Types.h>
+#include <me_BaseTypes.h>
 
 // Serial speed (baud):
 const TUint_4 SerialSpeed = 115200;

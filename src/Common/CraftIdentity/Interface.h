@@ -3,7 +3,7 @@
 /*
   Status: stable
   Version: 1
-  Last mod.: 2024-02-06
+  Last mod.: 2024-05-20
 */
 
 /*
@@ -15,7 +15,9 @@
 
 #pragma once
 
-#include <me_Types.h>
+#include <me_BaseTypes.h>
+
+using namespace me_BaseTypes;
 
 namespace me_WifiShip_Common_CraftIdentity
 {
